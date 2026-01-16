@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>FB Photo Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>FB Downloader</h2>
+        <p class="description">Navigate to the 'Photos' tab of a Facebook page, then click Start.</p>
+
+        <div class="controls">
+            <button id="startBtn" class="btn primary">Start Scanning</button>
+            <button id="stopBtn" class="btn secondary" disabled>Stop & Show URLs</button>
+        </div>
+
+        <div class="result-area">
+            <textarea id="urlList" class="input-field" placeholder="URLs will appear here..." readonly></textarea>
+            <button id="downloadTxtBtn" class="btn primary" disabled>Download .txt</button>
+        </div>
+
+        <div class="status-area">
+            <p id="statusText">Ready</p>
+            <p id="countText">Photos found: 0</p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
